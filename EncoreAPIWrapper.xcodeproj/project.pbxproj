@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F45DD13190F12CF008C1080 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F45DD12190F12CF008C1080 /* Foundation.framework */; };
+		3F45DD15190F12CF008C1080 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F45DD14190F12CF008C1080 /* CoreGraphics.framework */; };
+		3F45DD17190F12CF008C1080 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F45DD16190F12CF008C1080 /* UIKit.framework */; };
+		3F45DD1D190F12CF008C1080 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F45DD1B190F12CF008C1080 /* InfoPlist.strings */; };
+		3F45DD1F190F12CF008C1080 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45DD1E190F12CF008C1080 /* main.m */; };
+		3F45DD23190F12CF008C1080 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45DD22190F12CF008C1080 /* AppDelegate.m */; };
+		3F45DD25190F12CF008C1080 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F45DD24190F12CF008C1080 /* Images.xcassets */; };
+		3F45DD2C190F12CF008C1080 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F45DD2B190F12CF008C1080 /* XCTest.framework */; };
+		3F45DD2D190F12CF008C1080 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F45DD12190F12CF008C1080 /* Foundation.framework */; };
+		3F45DD2E190F12CF008C1080 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F45DD16190F12CF008C1080 /* UIKit.framework */; };
+		3F45DD36190F12CF008C1080 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F45DD34190F12CF008C1080 /* InfoPlist.strings */; };
+		3F45DD38190F12CF008C1080 /* EncoreAPIWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45DD37190F12CF008C1080 /* EncoreAPIWrapperTests.m */; };
+		3F45DE33190F157C008C1080 /* EncoreAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45DE32190F157C008C1080 /* EncoreAPI.m */; };
+		3F45E158190F1C05008C1080 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E136190F1C05008C1080 /* AFHTTPRequestOperation.m */; };
+		3F45E159190F1C05008C1080 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E138190F1C05008C1080 /* AFHTTPRequestOperationManager.m */; };
+		3F45E15A190F1C05008C1080 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E13A190F1C05008C1080 /* AFHTTPSessionManager.m */; };
+		3F45E15B190F1C05008C1080 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E13D190F1C05008C1080 /* AFNetworkReachabilityManager.m */; };
+		3F45E15C190F1C05008C1080 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E13F190F1C05008C1080 /* AFSecurityPolicy.m */; };
+		3F45E15D190F1C05008C1080 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E141190F1C05008C1080 /* AFURLConnectionOperation.m */; };
+		3F45E15E190F1C05008C1080 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E143190F1C05008C1080 /* AFURLRequestSerialization.m */; };
+		3F45E15F190F1C05008C1080 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E145190F1C05008C1080 /* AFURLResponseSerialization.m */; };
+		3F45E160190F1C05008C1080 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E147190F1C05008C1080 /* AFURLSessionManager.m */; };
+		3F45E178190F1C43008C1080 /* SBJson4Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E16B190F1C43008C1080 /* SBJson4Parser.m */; };
+		3F45E179190F1C43008C1080 /* SBJson4StreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E16D190F1C43008C1080 /* SBJson4StreamParser.m */; };
+		3F45E17A190F1C43008C1080 /* SBJson4StreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E16F190F1C43008C1080 /* SBJson4StreamParserState.m */; };
+		3F45E17B190F1C43008C1080 /* SBJson4StreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E171190F1C43008C1080 /* SBJson4StreamTokeniser.m */; };
+		3F45E17C190F1C43008C1080 /* SBJson4StreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E173190F1C43008C1080 /* SBJson4StreamWriter.m */; };
+		3F45E17D190F1C43008C1080 /* SBJson4StreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E175190F1C43008C1080 /* SBJson4StreamWriterState.m */; };
+		3F45E17E190F1C43008C1080 /* SBJson4Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F45E177190F1C43008C1080 /* SBJson4Writer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F45DD2F190F12CF008C1080 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F45DD07190F12CF008C1080 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F45DD0E190F12CF008C1080;
+			remoteInfo = EncoreAPIWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F45DD0F190F12CF008C1080 /* EncoreAPIWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncoreAPIWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F45DD12190F12CF008C1080 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F45DD14190F12CF008C1080 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F45DD16190F12CF008C1080 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F45DD1A190F12CF008C1080 /* EncoreAPIWrapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EncoreAPIWrapper-Info.plist"; sourceTree = "<group>"; };
+		3F45DD1C190F12CF008C1080 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F45DD1E190F12CF008C1080 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F45DD20190F12CF008C1080 /* EncoreAPIWrapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EncoreAPIWrapper-Prefix.pch"; sourceTree = "<group>"; };
+		3F45DD21190F12CF008C1080 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F45DD22190F12CF008C1080 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F45DD24190F12CF008C1080 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F45DD2A190F12CF008C1080 /* EncoreAPIWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncoreAPIWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F45DD2B190F12CF008C1080 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3F45DD33190F12CF008C1080 /* EncoreAPIWrapperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EncoreAPIWrapperTests-Info.plist"; sourceTree = "<group>"; };
+		3F45DD35190F12CF008C1080 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F45DD37190F12CF008C1080 /* EncoreAPIWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncoreAPIWrapperTests.m; sourceTree = "<group>"; };
+		3F45DE31190F157C008C1080 /* EncoreAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncoreAPI.h; sourceTree = "<group>"; };
+		3F45DE32190F157C008C1080 /* EncoreAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncoreAPI.m; sourceTree = "<group>"; };
+		3F45E135190F1C05008C1080 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		3F45E136190F1C05008C1080 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		3F45E137190F1C05008C1080 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		3F45E138190F1C05008C1080 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		3F45E139190F1C05008C1080 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		3F45E13A190F1C05008C1080 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		3F45E13B190F1C05008C1080 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		3F45E13C190F1C05008C1080 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		3F45E13D190F1C05008C1080 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		3F45E13E190F1C05008C1080 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		3F45E13F190F1C05008C1080 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		3F45E140190F1C05008C1080 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		3F45E141190F1C05008C1080 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		3F45E142190F1C05008C1080 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		3F45E143190F1C05008C1080 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		3F45E144190F1C05008C1080 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		3F45E145190F1C05008C1080 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		3F45E146190F1C05008C1080 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		3F45E147190F1C05008C1080 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		3F45E169190F1C43008C1080 /* SBJson4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4.h; sourceTree = "<group>"; };
+		3F45E16A190F1C43008C1080 /* SBJson4Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4Parser.h; sourceTree = "<group>"; };
+		3F45E16B190F1C43008C1080 /* SBJson4Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4Parser.m; sourceTree = "<group>"; };
+		3F45E16C190F1C43008C1080 /* SBJson4StreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4StreamParser.h; sourceTree = "<group>"; };
+		3F45E16D190F1C43008C1080 /* SBJson4StreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4StreamParser.m; sourceTree = "<group>"; };
+		3F45E16E190F1C43008C1080 /* SBJson4StreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4StreamParserState.h; sourceTree = "<group>"; };
+		3F45E16F190F1C43008C1080 /* SBJson4StreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4StreamParserState.m; sourceTree = "<group>"; };
+		3F45E170190F1C43008C1080 /* SBJson4StreamTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4StreamTokeniser.h; sourceTree = "<group>"; };
+		3F45E171190F1C43008C1080 /* SBJson4StreamTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4StreamTokeniser.m; sourceTree = "<group>"; };
+		3F45E172190F1C43008C1080 /* SBJson4StreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4StreamWriter.h; sourceTree = "<group>"; };
+		3F45E173190F1C43008C1080 /* SBJson4StreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4StreamWriter.m; sourceTree = "<group>"; };
+		3F45E174190F1C43008C1080 /* SBJson4StreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4StreamWriterState.h; sourceTree = "<group>"; };
+		3F45E175190F1C43008C1080 /* SBJson4StreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4StreamWriterState.m; sourceTree = "<group>"; };
+		3F45E176190F1C43008C1080 /* SBJson4Writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4Writer.h; sourceTree = "<group>"; };
+		3F45E177190F1C43008C1080 /* SBJson4Writer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4Writer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F45DD0C190F12CF008C1080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F45DD15190F12CF008C1080 /* CoreGraphics.framework in Frameworks */,
+				3F45DD17190F12CF008C1080 /* UIKit.framework in Frameworks */,
+				3F45DD13190F12CF008C1080 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F45DD27190F12CF008C1080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F45DD2C190F12CF008C1080 /* XCTest.framework in Frameworks */,
+				3F45DD2E190F12CF008C1080 /* UIKit.framework in Frameworks */,
+				3F45DD2D190F12CF008C1080 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F45DD06190F12CF008C1080 = {
+			isa = PBXGroup;
+			children = (
+				3F45DD18190F12CF008C1080 /* EncoreAPIWrapper */,
+				3F45DD31190F12CF008C1080 /* EncoreAPIWrapperTests */,
+				3F45DD11190F12CF008C1080 /* Frameworks */,
+				3F45DD10190F12CF008C1080 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F45DD10190F12CF008C1080 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F45DD0F190F12CF008C1080 /* EncoreAPIWrapper.app */,
+				3F45DD2A190F12CF008C1080 /* EncoreAPIWrapperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F45DD11190F12CF008C1080 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F45DD12190F12CF008C1080 /* Foundation.framework */,
+				3F45DD14190F12CF008C1080 /* CoreGraphics.framework */,
+				3F45DD16190F12CF008C1080 /* UIKit.framework */,
+				3F45DD2B190F12CF008C1080 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F45DD18190F12CF008C1080 /* EncoreAPIWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				3F45DD21190F12CF008C1080 /* AppDelegate.h */,
+				3F45DD22190F12CF008C1080 /* AppDelegate.m */,
+				3F45DE31190F157C008C1080 /* EncoreAPI.h */,
+				3F45DE32190F157C008C1080 /* EncoreAPI.m */,
+				3F45DD24190F12CF008C1080 /* Images.xcassets */,
+				3F45DD41190F1539008C1080 /* External */,
+				3F45DD19190F12CF008C1080 /* Supporting Files */,
+			);
+			path = EncoreAPIWrapper;
+			sourceTree = "<group>";
+		};
+		3F45DD19190F12CF008C1080 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F45DD1A190F12CF008C1080 /* EncoreAPIWrapper-Info.plist */,
+				3F45DD1B190F12CF008C1080 /* InfoPlist.strings */,
+				3F45DD1E190F12CF008C1080 /* main.m */,
+				3F45DD20190F12CF008C1080 /* EncoreAPIWrapper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F45DD31190F12CF008C1080 /* EncoreAPIWrapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F45DD37190F12CF008C1080 /* EncoreAPIWrapperTests.m */,
+				3F45DD32190F12CF008C1080 /* Supporting Files */,
+			);
+			path = EncoreAPIWrapperTests;
+			sourceTree = "<group>";
+		};
+		3F45DD32190F12CF008C1080 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F45DD33190F12CF008C1080 /* EncoreAPIWrapperTests-Info.plist */,
+				3F45DD34190F12CF008C1080 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F45DD41190F1539008C1080 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				3F45E168190F1C43008C1080 /* SBJson */,
+				3F45E134190F1C05008C1080 /* AFNetworking */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		3F45E134190F1C05008C1080 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3F45E135190F1C05008C1080 /* AFHTTPRequestOperation.h */,
+				3F45E136190F1C05008C1080 /* AFHTTPRequestOperation.m */,
+				3F45E137190F1C05008C1080 /* AFHTTPRequestOperationManager.h */,
+				3F45E138190F1C05008C1080 /* AFHTTPRequestOperationManager.m */,
+				3F45E139190F1C05008C1080 /* AFHTTPSessionManager.h */,
+				3F45E13A190F1C05008C1080 /* AFHTTPSessionManager.m */,
+				3F45E13B190F1C05008C1080 /* AFNetworking.h */,
+				3F45E13C190F1C05008C1080 /* AFNetworkReachabilityManager.h */,
+				3F45E13D190F1C05008C1080 /* AFNetworkReachabilityManager.m */,
+				3F45E13E190F1C05008C1080 /* AFSecurityPolicy.h */,
+				3F45E13F190F1C05008C1080 /* AFSecurityPolicy.m */,
+				3F45E140190F1C05008C1080 /* AFURLConnectionOperation.h */,
+				3F45E141190F1C05008C1080 /* AFURLConnectionOperation.m */,
+				3F45E142190F1C05008C1080 /* AFURLRequestSerialization.h */,
+				3F45E143190F1C05008C1080 /* AFURLRequestSerialization.m */,
+				3F45E144190F1C05008C1080 /* AFURLResponseSerialization.h */,
+				3F45E145190F1C05008C1080 /* AFURLResponseSerialization.m */,
+				3F45E146190F1C05008C1080 /* AFURLSessionManager.h */,
+				3F45E147190F1C05008C1080 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		3F45E168190F1C43008C1080 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				3F45E169190F1C43008C1080 /* SBJson4.h */,
+				3F45E16A190F1C43008C1080 /* SBJson4Parser.h */,
+				3F45E16B190F1C43008C1080 /* SBJson4Parser.m */,
+				3F45E16C190F1C43008C1080 /* SBJson4StreamParser.h */,
+				3F45E16D190F1C43008C1080 /* SBJson4StreamParser.m */,
+				3F45E16E190F1C43008C1080 /* SBJson4StreamParserState.h */,
+				3F45E16F190F1C43008C1080 /* SBJson4StreamParserState.m */,
+				3F45E170190F1C43008C1080 /* SBJson4StreamTokeniser.h */,
+				3F45E171190F1C43008C1080 /* SBJson4StreamTokeniser.m */,
+				3F45E172190F1C43008C1080 /* SBJson4StreamWriter.h */,
+				3F45E173190F1C43008C1080 /* SBJson4StreamWriter.m */,
+				3F45E174190F1C43008C1080 /* SBJson4StreamWriterState.h */,
+				3F45E175190F1C43008C1080 /* SBJson4StreamWriterState.m */,
+				3F45E176190F1C43008C1080 /* SBJson4Writer.h */,
+				3F45E177190F1C43008C1080 /* SBJson4Writer.m */,
+			);
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F45DD0E190F12CF008C1080 /* EncoreAPIWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F45DD3B190F12CF008C1080 /* Build configuration list for PBXNativeTarget "EncoreAPIWrapper" */;
+			buildPhases = (
+				3F45DD0B190F12CF008C1080 /* Sources */,
+				3F45DD0C190F12CF008C1080 /* Frameworks */,
+				3F45DD0D190F12CF008C1080 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EncoreAPIWrapper;
+			productName = EncoreAPIWrapper;
+			productReference = 3F45DD0F190F12CF008C1080 /* EncoreAPIWrapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F45DD29190F12CF008C1080 /* EncoreAPIWrapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F45DD3E190F12CF008C1080 /* Build configuration list for PBXNativeTarget "EncoreAPIWrapperTests" */;
+			buildPhases = (
+				3F45DD26190F12CF008C1080 /* Sources */,
+				3F45DD27190F12CF008C1080 /* Frameworks */,
+				3F45DD28190F12CF008C1080 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F45DD30190F12CF008C1080 /* PBXTargetDependency */,
+			);
+			name = EncoreAPIWrapperTests;
+			productName = EncoreAPIWrapperTests;
+			productReference = 3F45DD2A190F12CF008C1080 /* EncoreAPIWrapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F45DD07190F12CF008C1080 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Carlos Arenas";
+				TargetAttributes = {
+					3F45DD29190F12CF008C1080 = {
+						TestTargetID = 3F45DD0E190F12CF008C1080;
+					};
+				};
+			};
+			buildConfigurationList = 3F45DD0A190F12CF008C1080 /* Build configuration list for PBXProject "EncoreAPIWrapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3F45DD06190F12CF008C1080;
+			productRefGroup = 3F45DD10190F12CF008C1080 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F45DD0E190F12CF008C1080 /* EncoreAPIWrapper */,
+				3F45DD29190F12CF008C1080 /* EncoreAPIWrapperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F45DD0D190F12CF008C1080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F45DD1D190F12CF008C1080 /* InfoPlist.strings in Resources */,
+				3F45DD25190F12CF008C1080 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F45DD28190F12CF008C1080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F45DD36190F12CF008C1080 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F45DD0B190F12CF008C1080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F45E158190F1C05008C1080 /* AFHTTPRequestOperation.m in Sources */,
+				3F45DD23190F12CF008C1080 /* AppDelegate.m in Sources */,
+				3F45E17C190F1C43008C1080 /* SBJson4StreamWriter.m in Sources */,
+				3F45E159190F1C05008C1080 /* AFHTTPRequestOperationManager.m in Sources */,
+				3F45E15B190F1C05008C1080 /* AFNetworkReachabilityManager.m in Sources */,
+				3F45E15F190F1C05008C1080 /* AFURLResponseSerialization.m in Sources */,
+				3F45E178190F1C43008C1080 /* SBJson4Parser.m in Sources */,
+				3F45E17B190F1C43008C1080 /* SBJson4StreamTokeniser.m in Sources */,
+				3F45E179190F1C43008C1080 /* SBJson4StreamParser.m in Sources */,
+				3F45E15D190F1C05008C1080 /* AFURLConnectionOperation.m in Sources */,
+				3F45E17D190F1C43008C1080 /* SBJson4StreamWriterState.m in Sources */,
+				3F45E15C190F1C05008C1080 /* AFSecurityPolicy.m in Sources */,
+				3F45E15A190F1C05008C1080 /* AFHTTPSessionManager.m in Sources */,
+				3F45E15E190F1C05008C1080 /* AFURLRequestSerialization.m in Sources */,
+				3F45E160190F1C05008C1080 /* AFURLSessionManager.m in Sources */,
+				3F45DE33190F157C008C1080 /* EncoreAPI.m in Sources */,
+				3F45E17E190F1C43008C1080 /* SBJson4Writer.m in Sources */,
+				3F45DD1F190F12CF008C1080 /* main.m in Sources */,
+				3F45E17A190F1C43008C1080 /* SBJson4StreamParserState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F45DD26190F12CF008C1080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F45DD38190F12CF008C1080 /* EncoreAPIWrapperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F45DD30190F12CF008C1080 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F45DD0E190F12CF008C1080 /* EncoreAPIWrapper */;
+			targetProxy = 3F45DD2F190F12CF008C1080 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F45DD1B190F12CF008C1080 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F45DD1C190F12CF008C1080 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F45DD34190F12CF008C1080 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F45DD35190F12CF008C1080 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F45DD39190F12CF008C1080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F45DD3A190F12CF008C1080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F45DD3C190F12CF008C1080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EncoreAPIWrapper/EncoreAPIWrapper-Prefix.pch";
+				INFOPLIST_FILE = "EncoreAPIWrapper/EncoreAPIWrapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F45DD3D190F12CF008C1080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EncoreAPIWrapper/EncoreAPIWrapper-Prefix.pch";
+				INFOPLIST_FILE = "EncoreAPIWrapper/EncoreAPIWrapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3F45DD3F190F12CF008C1080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EncoreAPIWrapper.app/EncoreAPIWrapper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EncoreAPIWrapper/EncoreAPIWrapper-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EncoreAPIWrapperTests/EncoreAPIWrapperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3F45DD40190F12CF008C1080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EncoreAPIWrapper.app/EncoreAPIWrapper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EncoreAPIWrapper/EncoreAPIWrapper-Prefix.pch";
+				INFOPLIST_FILE = "EncoreAPIWrapperTests/EncoreAPIWrapperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F45DD0A190F12CF008C1080 /* Build configuration list for PBXProject "EncoreAPIWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F45DD39190F12CF008C1080 /* Debug */,
+				3F45DD3A190F12CF008C1080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F45DD3B190F12CF008C1080 /* Build configuration list for PBXNativeTarget "EncoreAPIWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F45DD3C190F12CF008C1080 /* Debug */,
+				3F45DD3D190F12CF008C1080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F45DD3E190F12CF008C1080 /* Build configuration list for PBXNativeTarget "EncoreAPIWrapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F45DD3F190F12CF008C1080 /* Debug */,
+				3F45DD40190F12CF008C1080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F45DD07190F12CF008C1080 /* Project object */;
+}
